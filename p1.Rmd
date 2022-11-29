@@ -1,0 +1,48 @@
+---
+title: "Analysis- v1"
+author: |
+  |  Lakshmi Sai Nikhila Talla
+  | UB PERSON ID: 50441699
+date: "`r Sys.Date()`"
+output:
+  html_document:
+    df_print: paged
+  pdf_document: default
+---
+
+```{r setup, include=FALSE}
+knitr::opts_chunk$set(echo = TRUE)
+```
+
+```{r}
+library(MASS)
+library(glmnet)
+library(ISLR2)
+library(boot)
+library(psych)
+
+```
+```{r}
+sales_data = read.csv("~/sdm/sales.csv")
+```
+
+```{r}
+head(sales_data)
+```
+```{r}
+str(sales_data)
+```
+```{r}
+summary(sales_data)
+```
+```{r}
+describe(sales_data)
+```
+```{r}
+which(is.na(sales_data), arr.ind=TRUE)
+```
+### there are no missing values in our data.
+```{r}
+```
+```{r}
+```
